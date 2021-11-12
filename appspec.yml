@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:eu-west-1:459045743560:task-definition/khoi-learn-saas-task-definition:2"
+        TaskDefinition: "arn:aws:ecs:eu-west-1:459045743560:task-definition/khoi-learn-saas-task-definition:1"
         LoadBalancerInfo:
           ContainerName: "docker-spring-secret"
           ContainerPort: 8080
