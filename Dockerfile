@@ -6,4 +6,4 @@ RUN mkdir -p /opt/docker-spring-secret
 
 ADD target/docker-spring-secret-0.0.1-SNAPSHOT.jar /opt/docker-spring-secret/application.jar
 
-ENTRYPOINT ["java","-jar", "application.jar"]
+ENTRYPOINT ["java","-jar", "/opt/docker-spring-secret/application.jar"]
