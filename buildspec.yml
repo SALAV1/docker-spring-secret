@@ -26,7 +26,8 @@ phases:
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
       - printf '[{"name":"docker-spring-secret","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-      - cat imagedefinitions.jsonartifacts:
-  files:
-    - imagedefinitions.json
-    - target/docker-spring-secret-0.0.1-SNAPSHOT.jar
+      - cat imagedefinitions.json
+  artifacts:
+    files:
+      - imagedefinitions.json
+      - target/docker-spring-secret-0.0.1-SNAPSHOT.jar
